@@ -5,6 +5,8 @@ type Project = {
   summary: string;
   description: string;
   tech: string[];
+  imageSrc: string;
+  imageAlt: string;
   imagePosition: 'left' | 'right';
 };
 
@@ -12,6 +14,8 @@ type SkillColumn = {
   title: string;
   items: string[];
 };
+
+const placeholderImage = '/project-placeholder.svg';
 
 const quickFacts = [
   {
@@ -43,6 +47,8 @@ const projects: Project[] = [
     description:
       'Niibl helps home cooks quickly scale recipes without the math. I designed and built the interface around clarity and ease of use, combining real-time conversions with a clean, mobile-first layout. Focused on simple flows, everyday usability, and an approachable visual system.',
     tech: ['React', 'UI Design', 'TypeScript', 'Headless CMS', 'Accessibility'],
+    imageSrc: placeholderImage,
+    imageAlt: 'Preview placeholder for Niibl recipe converter interface',
     imagePosition: 'left',
   },
   {
@@ -51,6 +57,8 @@ const projects: Project[] = [
     description:
       'A full redesign concept focused on storytelling, menu clarity, and a strong brand presence. I created a grounded visual language inspired by earth-tone palettes and improved the browsing experience across mobile and desktop. Designed to help small businesses communicate authenticity and build trust.',
     tech: ['Branding', 'Tailwind', 'Web UI', 'Responsive Design', 'Tailwind CSS', 'React', 'Figma'],
+    imageSrc: placeholderImage,
+    imageAlt: 'Preview placeholder for Roots Design Studio cafe redesign',
     imagePosition: 'right',
   },
   {
@@ -59,6 +67,8 @@ const projects: Project[] = [
     description:
       'Built a modern product page with clear hierarchy, accessible interaction patterns, and responsive UI components. Emphasized scannability, visual balance, and purposeful CTAs to create a frictionless shopping experience across devices.',
     tech: ['User Experience', 'React', 'Performance', 'Single Page App'],
+    imageSrc: placeholderImage,
+    imageAlt: 'Preview placeholder for single-page product experience',
     imagePosition: 'left',
   },
 ];
@@ -185,22 +195,13 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
   return (
     <div className="grid gap-10 rounded-xl bg-warmSand p-8 shadow-sm ring-1 ring-olive/10 md:grid-cols-2 md:p-12 md:gap-12">
       <div className={`flex items-center ${imageFirst ? '' : 'md:order-last'}`}>
-        <div className="w-full min-h-[320px] rounded-2xl bg-gradient-to-br from-sage/70 via-offWhite to-olive/40 shadow-card">
-          <div className="flex h-full flex-col justify-between p-6">
-            <div className="flex items-center justify-between">
-              <div className="h-10 w-10 rounded-full bg-white/80" />
-              <div className="h-3 w-16 rounded-full bg-white/70" />
-            </div>
-            <div className="space-y-3">
-              <div className="h-12 rounded-xl bg-white/80" />
-              <div className="grid grid-cols-3 gap-2">
-                <div className="h-16 rounded-xl bg-white/60" />
-                <div className="h-16 rounded-xl bg-white/70" />
-                <div className="h-16 rounded-xl bg-white/60" />
-              </div>
-              <div className="h-10 rounded-xl bg-white/70" />
-            </div>
-          </div>
+        <div className="w-full overflow-hidden rounded-2xl bg-gradient-to-br from-sage/70 via-offWhite to-olive/40 shadow-card aspect-[4/3]">
+          <img
+            src={project.imageSrc}
+            alt={project.imageAlt}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
       <div className="space-y-5">
@@ -250,10 +251,7 @@ const Skills = () => (
             </div>
             <ul className="space-y-3 text-gray-700">
               {col.items.map((item) => (
-                <li key={item} className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-olive" />
-                  <span>{item}</span>
-                </li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
@@ -269,7 +267,7 @@ const Contact = () => (
       <p className="text-sm font-semibold uppercase tracking-[0.18em] text-olive">Contact</p>
       <h2 className="text-3xl font-semibold">Let&apos;s Connect</h2>
       <p className="text-lg text-gray-700">
-        Open to collaborations, freelance engagements, or simply swapping notes on design systems and frontend craft.
+        Open to collaborations, career opportunities, freelance engagements, or simply swapping notes on design systems and frontend technologies.
       </p>
       <div className="flex justify-center">
         <a

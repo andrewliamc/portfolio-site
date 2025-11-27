@@ -1,0 +1,28 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="1200" y1="0" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BAA9A" stop-opacity="0.9" />
+      <stop offset="0.55" stop-color="#FAF9F7" />
+      <stop offset="1" stop-color="#E8DCCB" />
+    </linearGradient>
+    <linearGradient id="panel" x1="260" y1="190" x2="940" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="48" fill="url(#bg)" />
+  <circle cx="180" cy="180" r="120" fill="#FFFFFF" fill-opacity="0.32" />
+  <circle cx="1040" cy="120" r="140" fill="#2F2F2F" fill-opacity="0.08" />
+  <circle cx="1020" cy="700" r="110" fill="#7C8F6D" fill-opacity="0.22" />
+  <rect x="160" y="170" width="880" height="420" rx="36" fill="url(#panel)" stroke="#E3D7C8" stroke-width="3" />
+  <rect x="220" y="240" width="320" height="60" rx="18" fill="#E8DCCB" />
+  <rect x="220" y="330" width="240" height="18" rx="9" fill="#2F2F2F" fill-opacity="0.12" />
+  <rect x="220" y="360" width="360" height="18" rx="9" fill="#2F2F2F" fill-opacity="0.12" />
+  <rect x="220" y="390" width="180" height="18" rx="9" fill="#2F2F2F" fill-opacity="0.12" />
+  <rect x="620" y="250" width="300" height="200" rx="26" fill="#2F2F2F" fill-opacity="0.08" />
+  <rect x="620" y="470" width="220" height="28" rx="12" fill="#8BAA9A" fill-opacity="0.85" />
+  <circle cx="240" cy="470" r="32" fill="#8BAA9A" fill-opacity="0.8" />
+  <text x="222" y="550" fill="#2F2F2F" fill-opacity="0.65" font-family="Sora, Inter, 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="600">
+    Project preview - replace with your image
+  </text>
+</svg>
