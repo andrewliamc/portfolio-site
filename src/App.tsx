@@ -38,27 +38,27 @@ const quickFacts = [
 
 const projects: Project[] = [
   {
-    title: 'Calm Commerce UI',
-    summary: 'Conversion-first storefront built for clarity and speed.',
+    title: 'Niibl — Smart Recipe Portion Converter',
+    summary: 'Modern, intuitive portioning for everyday cooking.',
     description:
-      'Reusable storefront blocks, semantic animations, and a11y-first interactions. Reduced bounce rate by delivering instant perceived loading and crisp microcopy.',
-    tech: ['React', 'Tailwind', 'TypeScript', 'Headless CMS'],
+      'Niibl helps home cooks quickly scale recipes without the math. I designed and built the interface around clarity and ease of use, combining real-time conversions with a clean, mobile-first layout. Focused on simple flows, everyday usability, and an approachable visual system.',
+    tech: ['React', 'UI Design', 'TypeScript', 'Headless CMS', 'Accessibility'],
     imagePosition: 'left',
   },
   {
-    title: 'Wellness Insights',
-    summary: 'Dashboard surfacing actionable health trends.',
+    title: 'Roots Design Studio — Cafe Website Redesign',
+    summary: 'A warm, modern redesign built for local cafés and small businesses.',
     description:
-      'Data viz system with responsive cards, timeline filters, and API-backed personalization. Focused on typography hierarchy and breathing room.',
-    tech: ['React', 'Tailwind', 'API Integration', 'D3-lite'],
+      'A full redesign concept focused on storytelling, menu clarity, and a strong brand presence. I created a grounded visual language inspired by earth-tone palettes and improved the browsing experience across mobile and desktop. Designed to help small businesses communicate authenticity and build trust.',
+    tech: ['Branding', 'Tailwind', 'Web UI', 'Responsive Design', 'Tailwind CSS', 'React', 'Figma'],
     imagePosition: 'right',
   },
   {
-    title: 'Design System Seeds',
-    summary: 'Lightweight component library for fast prototyping.',
+    title: 'Single-Page Product Experience',
+    summary: 'A clean, conversion-focused e-commerce layout.',
     description:
-      'Tokenized spacing, color, and typography with Figma ↔ code parity. Delivered flexible patterns that stay consistent across surfaces.',
-    tech: ['Design Tokens', 'Theming', 'Accessibility', 'Storybook'],
+      'Built a modern product page with clear hierarchy, accessible interaction patterns, and responsive UI components. Emphasized scannability, visual balance, and purposeful CTAs to create a frictionless shopping experience across devices.',
+    tech: ['User Experience', 'React', 'Performance', 'Single Page App'],
     imagePosition: 'left',
   },
 ];
