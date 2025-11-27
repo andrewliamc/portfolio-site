@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Sora', system-ui, -apple-system, sans-serif;
+  background: #faf9f7;
+  color: #2f2f2f;
+  line-height: 1.7;
+}
+
+.prose-muted {
+  color: #4a4a4a;
+}
+
+.pill {
+  border-radius: 999px;
+}
