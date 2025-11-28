@@ -8,6 +8,7 @@ type Project = {
   imageSrc: string;
   imageAlt: string;
   imagePosition: 'left' | 'right';
+  link?: string;
 };
 
 type SkillColumn = {
@@ -50,6 +51,7 @@ const projects: Project[] = [
     imageSrc: placeholderImage,
     imageAlt: 'Preview placeholder for Niibl recipe converter interface',
     imagePosition: 'left',
+    link: 'https://niibl-react.vercel.app/',
   },
   {
     title: 'Roots Design Studio — Cafe Website Redesign',
@@ -217,7 +219,9 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
           ))}
         </div>
         <a
-          href="#"
+          href={project.link ?? '#'}
+          target={project.link ? '_blank' : undefined}
+          rel={project.link ? 'noreferrer' : undefined}
           className="inline-flex items-center gap-2 text-base font-semibold text-charcoal transition hover:text-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-olive"
         >
           View Project
