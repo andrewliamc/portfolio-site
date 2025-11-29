@@ -48,8 +48,8 @@ const projects: Project[] = [
     description:
       'Niibl helps home cooks quickly scale recipes without the math. I designed and built the interface around clarity and ease of use, combining real-time conversions with a clean, mobile-first layout. Focused on simple flows, everyday usability, and an approachable visual system.',
     tech: ['React', 'UI Design', 'TypeScript', 'Headless CMS', 'Accessibility'],
-    imageSrc: placeholderImage,
-    imageAlt: 'Preview placeholder for Niibl recipe converter interface',
+    imageSrc: '/niibl-react-project-card-img.png',
+    imageAlt: 'Screenshot of the Niibl recipe converter interface',
     imagePosition: 'left',
     link: 'https://niibl-react.vercel.app/',
   },
@@ -220,8 +220,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
         </div>
         <a
           href={project.link ?? '#'}
-          target={project.link ? '_blank' : undefined}
-          rel={project.link ? 'noreferrer' : undefined}
+          target="_blank"
+          rel="noreferrer noopener"
           className="inline-flex items-center gap-2 text-base font-semibold text-charcoal transition hover:text-olive focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-olive"
         >
           View Project
