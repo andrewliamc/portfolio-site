@@ -54,8 +54,8 @@ const projects: Project[] = [
     link: 'https://niibl-react.vercel.app/',
   },
   {
-    title: 'Roots Design Studio — Cafe Website Redesign',
-    summary: 'A warm, modern redesign built for local cafés and small businesses.',
+    title: 'Restaurant Website Redesign',
+    summary: 'A warm, modern redesign built for a local café and small business.',
     description:
       'A full redesign concept focused on storytelling, menu clarity, and a strong brand presence. I created a grounded visual language inspired by earth-tone palettes and improved the browsing experience across mobile and desktop. Designed to help small businesses communicate authenticity and build trust.',
     tech: ['Branding', 'Tailwind', 'Web UI', 'Responsive Design', 'Tailwind CSS', 'React', 'Figma'],
@@ -72,6 +72,7 @@ const projects: Project[] = [
     imageSrc: placeholderImage,
     imageAlt: 'Preview placeholder for single-page product experience',
     imagePosition: 'left',
+    link: 'https://cleo-ecommerce-single-page.vercel.app/',
   },
 ];
 
