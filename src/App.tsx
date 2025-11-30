@@ -69,7 +69,7 @@ const projects: Project[] = [
     description:
       'Built a modern product page with clear hierarchy, accessible interaction patterns, and responsive UI components. Emphasized scannability, visual balance, and purposeful CTAs to create a frictionless shopping experience across devices.',
     tech: ['Brand Strategy & Identity', 'User Experience', 'Next.js', 'Tailwind CSS', 'Single Page App'],
-    imageSrc: '/cleo-project-card.png',
+    imageSrc: '/cleo-project-preview.png',
     imageAlt: 'Screenshot of the Cleo single-page product experience',
     imagePosition: 'left',
     link: 'https://cleo-ecommerce-single-page.vercel.app/',
