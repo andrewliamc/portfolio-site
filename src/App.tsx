@@ -48,7 +48,7 @@ const projects: Project[] = [
     description:
       'Niibl helps home cooks quickly scale recipes without the math. I designed and built the interface around clarity and ease of use, combining real-time conversions with a clean, mobile-first layout. Focused on simple flows, everyday usability, and an approachable visual system.',
     tech: ['React', 'UI Design', 'TypeScript', 'Headless CMS', 'Accessibility'],
-    imageSrc: '/niibl-react-project-card-img.png',
+    imageSrc: 'images/niibl-react-project-card-img.png',
     imageAlt: 'Screenshot of the Niibl recipe converter interface',
     imagePosition: 'left',
     link: 'https://niibl-react.vercel.app/',
@@ -69,7 +69,7 @@ const projects: Project[] = [
     description:
       'Built a modern product page with clear hierarchy, accessible interaction patterns, and responsive UI components. Emphasized scannability, visual balance, and purposeful CTAs to create a frictionless shopping experience across devices.',
     tech: ['Brand Strategy & Identity', 'User Experience', 'Next.js', 'Tailwind CSS', 'Single Page App'],
-    imageSrc: '/cleo-project-preview.png',
+    imageSrc: 'images/cleo-project-preview.png',
     imageAlt: 'Screenshot of the Cleo single-page product experience',
     imagePosition: 'left',
     link: 'https://cleo-ecommerce-single-page.vercel.app/',
